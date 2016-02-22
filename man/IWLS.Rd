@@ -25,7 +25,7 @@ IWLS(y,X,n)
 The iterative weighted least squares (IWLS) is a general algorithm to find the maximum likelihood estimations (mle) and standard deviations in generalized linear mixed models. There are several ways to derive it, but the one that has been developed in this function is via the Newton-Raphson method. It consists of making a Taylor expansion in the score function, the first derivate of the log-likelihood, around the mle. This especific IWLS, \code{IWLS}, has been developed to find out the mle and the standard errors in logistic regression by the introduction of a dependent variable, a matrix model of the regression and the the maximum score of the binomial trials.
 }
 \author{
-Josu Najera Zuloaga
+Josu Najera
 
 Dae-Jin Lee
 }
