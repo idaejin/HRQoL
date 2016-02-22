@@ -1,4 +1,4 @@
-# Health Related Quality of Life Statistical Analysis for the SF-36 short form survey
+# Health Related Quality of Life regression analysis for the SF-36 short form survey
 
 **HRQoL R package**
 
