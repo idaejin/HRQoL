@@ -53,7 +53,7 @@ The \code{rbeta} and \code{rbinom} functions of package \code{\link[<stats>:<sta
 \examples{
 set.seed(12)
 # We define
-n <- 10     #maximun number of scores in the binomial trials
+n <- 10     #maximum number of scores in the binomial trials
 p <- 0.4    #probability parameter of the beta-binomial distribution
 phi <- 1.8  #dispersion parameter of the beta-binomial distribution
 
@@ -61,8 +61,8 @@ phi <- 1.8  #dispersion parameter of the beta-binomial distribution
 k <- 100
 bb <- rBB(k,n,p,phi)
 
-# We are going to plot the histogram of the created variable,
-#and using dBB() function we are going to fit the distribution:
+# Plot the histogram of the created variable,
+# dBB() function fits beta-binomial distribution:
 hist(bb,col="grey",breaks=seq(-0.5,n+0.5,1),probability=TRUE,main="Histogram",xlab="beta-binomial random variable")
 lines(c(0:n),dBB(0:n,n,p,phi),col="red",lwd=4)
 

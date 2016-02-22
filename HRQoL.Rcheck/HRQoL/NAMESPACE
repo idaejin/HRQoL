@@ -1,6 +1,0 @@
-exportPattern("^[[:alpha:]]+")
-import(RColorBrewer)
-import(fmsb)
-import(car)
-import(matrixcalc)
-import(rootSolve)
