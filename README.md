@@ -4,7 +4,7 @@
 
 **Creator(s):** Josu Nájera (<jnajera@bcamath.org>) & Dae-Jin Lee (<dlee@bcamath.org>)
 
-``
+```
 install.packages("devtools")
 
 library(devtools)
