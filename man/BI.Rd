@@ -2,10 +2,10 @@
 \alias{dBI}
 \alias{rBI}
 \title{
-The Binomial distribution with Dispersion Parameter
+The Binomial distribution with overdispersion
 }
 \description{
-Density and random generation for the binomial distribution with optional dispersion parameter.
+Density and random generation for the binomial distribution with optional dispersion parameter calculation.
 }
 \usage{
 dBI(n,p,phi)
@@ -24,26 +24,26 @@ rBI(k,n,p,phi)}
 \code{rBI} generates \code{k} random observations based on a binomial distribution with those \code{n}, \code{p} and \code{phi} parameters.}
 
 \details{
-The inclusion of a dispersion parameter in the variance equation of the binomial distribution softens the relationship that is expected between the mean and variance in binomial models,
+The inclusion of a dispersion parameter in the variance equation of the binomial distribution relaxes the relationship that is expected between the mean and variance in binomial models,
 \deqn{E[y]=np, \quad Var[y]=\phi np(1-p).}
-The density function of this binomial model is calculated considering as an expontial family, where the density function has the following form
+The density function of this binomial model is calculated considering as an exponential family, where the density function has the following form
 \deqn{f(y)=\frac{y log(p/(1-p))+n log(1-p)}{\phi}+c(y,\phi),}
 where \eqn{c(y,\phi)} is a function that is approximated by the deviance of the model.
 }
 
 \author{
-Josu Najera
+Josu Najera Zuloaga
 
 Dae-Jin Lee
 }
 
 \references{
-Pawitan Y. (2001): In All Likelihood: Statistical Modelling and Inference Using Likelihood, \emph{Oxford University Press}
+Pawitan Y. (2001): In All Likelihood: Statistical Modelling and Inference Using Likelihood, \emph{Oxford University Press.}
 }
 
 \keyword{ stats }
 \seealso{
-The \code{rbinom} functions of package \code{\link[<stats>:<stats>-stats]{<stats>}}. This function performs simulations based on a binomial distribution without dispersion parameter.
+The \code{rbinom} function of package \code{\link[<stats>:<stats>-stats]{<stats>}}. This function performs simulations based on a binomial distribution without dispersion parameter.
 }
 \examples{
 k <- 1000

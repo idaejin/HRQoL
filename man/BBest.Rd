@@ -39,13 +39,13 @@ The variance of the estimations is calculated by maximum likelihood by the secon
 }
 
 \author{
-Josu Najera
+Josu Najera Zuloaga
 
 Dae-Jin Lee
 }
 \references{
-Arostegui I., Nunez-Anton V. & Quintana J. M. (2006): Analysis of short-form-36 (SF-36): The
-beta-binomial distribution approach, \emph{Statistics in Medicine}, 26, 1318-1342
+Arostegui I., Nuñez-Antón V. & Quintana J. M. (2006): Analysis of short-form-36 (SF-36): The
+beta-binomial distribution approach, \emph{Statistics in Medicine}, 26, 1318-1342.
 }
 
 \examples{

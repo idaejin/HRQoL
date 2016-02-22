@@ -3,7 +3,7 @@
 \title{
 Generalized Linear Mixed Models (GLMMs) for binomial data}
 \description{
-This model provides the inclusion of random effects in the linear predictor of a logistic regression. The random components are assumed with a normal distribution of zero expectation. This type of model can be used to modelize binomial data over time or binomial hierarchical models.}
+This model fits a logistic regression with Gaussian random effects. The random effects are assumed to be distributed as a normal distribution with zero mean.}
 \usage{
 BIMreg(formula,n,random,data)
 }

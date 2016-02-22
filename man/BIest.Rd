@@ -19,17 +19,17 @@ BIest(y,n,disp=FALSE)
 \value{
 \item{p}{ the maximum likelihood estimation of the probability parameter.}
 \item{se}{ the standard errors of the mle.}
-\item{low.ic}{ the lower bound of the intervale of confidence of the mle.}
-\item{up.ic}{ the upper bound of the intervale of confidence of the mle.}
-\item{phi}{ if the disp option is TRUE, it returns the estimated value of the dispersion parameter. This estimation is realized with the method of moments, and influences in the standard error of the mle.}
+\item{low.ic}{ the lower bound of the confidence interval of the mle.}
+\item{up.ic}{ the upper bound of the confidence interval of the mle.}
+\item{phi}{ if the 'disp' option is TRUE, it returns the estimated value of the dispersion parameter. This estimation is done by method of moments, and affects estimation of the standard error of the mle.}
 }
 
 \details{
-The estimation of the probability parameter is calculated by maximum likelihood considering the binomial distribution as a general exponential family distribution. The log-likelihood is derived and equalized to zero, reaching the solution that maximizes the log-likelihood. It also returns the standard error of the estimator, which is obtained by the Fisher information formula, i.e., the second derivate of the log-likelihood inserting the mle.
+The estimation of the probability parameter is calculated by maximum likelihood considering the binomial distribution as a general exponential family distribution. The log-likelihood is derived and equated to zero, the solution maximizes the log-likelihood. It also returns the standard error of the estimator, which is obtained by the Fisher information formula, i.e., the second derivate of the log-likelihood inserting the mle.
 
-On the other hand, once the mle of the probability parameter has been found out, the dispersion parameter is estimate by the method of moments by the following formula,
+On the other hand, once the mle of the probability parameter has been found out, the dispersion parameter is estimated by the method of moments by the following formula,
 \deqn{Var[Y]=\phi np(1-p)}
-We replace the estimated value of the probability parameter and the calculated variance of the variable in the formula reaching the estimated value of the dispersion parameter. 
+We replace the estimated value of the probability parameter and the calculated variance of the variable in the formula giving the estimated value of the dispersion parameter. 
 }
 \author{
 Josu Najera Zuloaga

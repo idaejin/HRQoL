@@ -49,12 +49,12 @@ If the estimation of the dispersion parameter \eqn{\phi} in the iterative weigth
 }
 
 \author{
-  Josu Najera
+  Josu Najera Zuloaga
   
   Dae-Jin Lee
 }
 \references{
-Forcina A. & Franconi L. (1988): Regression analysis with Beta-Binomial distribution, \emph{Revista di Statistica Applicata}, 21
+Forcina A. & Franconi L. (1988): Regression analysis with Beta-Binomial distribution, \emph{Revista di Statistica Applicata}, 21.
 }
 
 \examples{
