@@ -2,10 +2,7 @@
 
 **HRQoL R package**
 
-This `R` package implements the use of Beta-binomial regression (with logistic link) for Health Related Quality of Life outcomes from SF-36 survey.
-
-In addition, it includes some graphical options and re-codification of SF-36 scores as in Arostegui *et al.* (2006).
-
+This `R` package implements the use of Beta-binomial regression (with logistic link) for Health Related Quality of Life from SF-36 survey outcomes.
 
 **Author(s):** Josu Nájera (<jnajera@bcamath.org>) & Dae-Jin Lee (<dlee@bcamath.org>)
 
