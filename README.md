@@ -5,11 +5,11 @@
 **Creator(s):** Josu Nájera (<jnajera@bcamath.org>) & Dae-Jin Lee (<dlee@bcamath.org>)
 
 
-Install `HRQoL` using `devtools`
+## Installation of  `HRQoL` using `devtools`
 
 ```
 install.packages("devtools")
 library(devtools)
-dev_mode(on=T)
+dev_mode(on=TRUE)
 install_github("idaejin/HRQoL")
 ```
