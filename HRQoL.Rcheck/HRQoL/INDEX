@@ -1,0 +1,16 @@
+BBest                   Estimation of the parameters of beta-binomial
+                        distribution
+BBreg                   Fitting Beta-Binomial Regression Models
+BIMreg                  Generalized Linear Mixed Models (GLMMs) for
+                        binomial data
+BIest                   Estimation of the parameters of a binomial
+                        distribution
+BIreg                   Fit a logistic regression model
+HRQoL-package           Health Related Quality of Life Analysis
+HRQoLplot               Spider plot of the dimensions of the Short
+                        Form-36 Health Survey
+IWLS                    Iterative Weighted Least Squares
+SF36rec                 Short Form-36 Helath Survey (SF-36) Recode
+dBB                     The Beta-Binomial Distribution
+dBI                     The Binomial distribution with Dispersion
+                        Parameter

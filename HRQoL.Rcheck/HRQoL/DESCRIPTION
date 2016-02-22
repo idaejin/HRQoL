@@ -1,0 +1,11 @@
+Package: HRQoL
+Title: Health Related Quality of Life Analysis
+Version: 1.0
+Author: Josu Najera <jnajera@bcamath.org>, Dae-Jin Lee <dlee@bcamath.org>
+Maintainer: Josu Najera <jnajera@bcamath.org>
+Description: Statistical analysis of Health Related Quality of Life data provided by the Short-Form-36 Health Survey
+License: What license is it under?
+Imports: fmsb, car, RColorBrewer, matrixcalc, rootSolve
+Packaged: 2016-02-22 10:01:50 UTC; dlee
+NeedsCompilation: no
+Built: R 3.2.0; ; 2016-02-22 10:01:51 UTC; unix
