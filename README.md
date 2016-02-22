@@ -4,7 +4,10 @@
 
 This `R` package implements the use of Beta-binomial regression (with logistic link) for Health Related Quality of Life from SF-36 survey outcomes.
 
-**Author(s):** Josu Nájera (<jnajera@bcamath.org>), Dae-Jin Lee (<dlee@bcamath.org>) and Inmaculada Arostegui (<inmaculada.arostegui@ehu.eus>)
+**Author(s):** 
++ Josu Nájera (<jnajera@bcamath.org>), 
++ Dae-Jin Lee (<dlee@bcamath.org>) and 
++ Inmaculada Arostegui (<inmaculada.arostegui@ehu.eus>)
 
 
 ## Installation of  `HRQoL` using `devtools`
