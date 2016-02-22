@@ -6,15 +6,6 @@ This `R` package implements the use of Beta-binomial regression (with logistic l
 
 In addition, it included some graphical options and re-codification of SF-36 scores as in 
 
-References
-
-Breslow N. E. & Calyton D. G. (1993): Approximate Inference in Generalized Linear Mixed Models, Journal of the American Statistical Association, 88, 9-25.
-
-McCulloch C. E. & Searle S. R. (2001): Generalized, Linear, and Mixed Models, John Wiley & Sons.
-
-Pawitan Y. (2001): In All Likelihood: Statistical Modelling and Inference Using Likelihood, Oxford University Press.
-
-
 **Creator(s):** Josu Nájera (<jnajera@bcamath.org>) & Dae-Jin Lee (<dlee@bcamath.org>)
 
 
@@ -26,3 +17,14 @@ library(devtools)
 dev_mode(on=TRUE)
 install_github("idaejin/HRQoL")
 ```
+
+
+
+# References
+
+* Breslow N. E. & Calyton D. G. (1993): Approximate Inference in Generalized Linear Mixed Models, Journal of the American Statistical Association, 88, 9-25.
+
+* McCulloch C. E. & Searle S. R. (2001): Generalized, Linear, and Mixed Models, John Wiley & Sons.
+
+* Pawitan Y. (2001): In All Likelihood: Statistical Modelling and Inference Using Likelihood, Oxford University Press.
+
