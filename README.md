@@ -22,7 +22,7 @@ install_github("idaejin/HRQoL")
 
 # References
 
-* Breslow N. E. & Calyton D. G. (1993): Approximate Inference in Generalized Linear Mixed Models, Journal of the American Statistical Association, 88, 9-25.
+* Breslow N. E. & Clayton D. G. (1993): Approximate Inference in Generalized Linear Mixed Models, Journal of the American Statistical Association, 88, 9-25.
 
 * McCulloch C. E. & Searle S. R. (2001): Generalized, Linear, and Mixed Models, John Wiley & Sons.
 
