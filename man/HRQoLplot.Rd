@@ -13,7 +13,7 @@ HRQoLplot(data,legend)
 \arguments{
 \item{data}{ a data frame with each column relative to observations of each dimension. The columns of the data frame must be introduced in the following order:
 \enumerate{
-\item column -> Role Physical
+\item  column -> Role Physical
 \item  column -> Role Emotional
 \item  column -> Physical Functioning
 \item  column -> Vitality
@@ -23,7 +23,7 @@ HRQoLplot(data,legend)
 \item  column -> Mental Health
 }
 }
-\item{legend}{ logical parameter, if TRUE the legend with the name of the rows of the data will appear. FALSE has been taken by default.}
+\item{legend}{ logical parameter, if \code{TRUE} the legend with the name of the rows of the data will appear. \code{FALSE} has been taken by default.}
 }
 
 \details{

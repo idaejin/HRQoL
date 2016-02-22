@@ -13,7 +13,7 @@ BIest(y,n,disp=FALSE)
 \arguments{
 \item{y}{ the variable under the binomial distribution assumption we want to model.}
 \item{n}{  the maximum score of the binomial trials.}
-\item{disp}{ if TRUE the dispersion parameter will be added to the model. By default it uses the FALSE option.}
+\item{disp}{ if \code{TRUE} the dispersion parameter will be added to the model. By default it uses the FALSE option.}
 }
 
 \value{
@@ -21,7 +21,7 @@ BIest(y,n,disp=FALSE)
 \item{se}{ the standard errors of the mle.}
 \item{low.ic}{ the lower bound of the confidence interval of the mle.}
 \item{up.ic}{ the upper bound of the confidence interval of the mle.}
-\item{phi}{ if the \code{disp} option is TRUE, it returns the estimated value of the dispersion parameter. This estimation is done by method of moments, and affects estimation of the standard error of the mle.}
+\item{phi}{ if the \code{disp} option is \code{TRUE}, it returns the estimated value of the dispersion parameter. This estimation is done by method of moments, and affects estimation of the standard error of the mle.}
 }
 
 \details{

@@ -45,7 +45,7 @@ where \eqn{\beta} is a \eqn{(t+1)\times 1} vector of regression parameter, and \
 
 The marginal density of the beta-binomial distribution can be explicity calculated, so if we replace the previous equation on the probability parameter of the density function we can perform estimations by maximum likelihood in the distribution parameters. Forcina and Franconi (1988) presented an iterative weighted least square method to perfom estimation on the both, regression parameters and, the dispersion parameter of the beta-binomial distribution.
 
-If the estimation of the dispersion parameter \eqn{\phi} in the iterative weigthes least squares method is lower than \eqn{0.05/[(n-1)-0.05)]}, where \eqn{n} is the number of trials, the function will use the usual logistic regression based on a binomial distribution, as a lower estimation of the dispersion parameter than the given value means that there is no dispersion problem in the model.
+If the estimation of the dispersion parameter \eqn{\phi} in the iterative weigthing least squares method is lower than \eqn{0.05/[(n-1)-0.05)]}, where \eqn{n} is the number of trials, the function will use the usual logistic regression based on a binomial distribution, as a lower estimation of the dispersion parameter than the given value means that there is no dispersion problem in the model.
 }
 
 \author{
@@ -72,9 +72,9 @@ Forcina A. & Franconi L. (1988): Regression analysis with Beta-Binomial distribu
   p <- 1/(1+exp(-(2*x-10)))
   phi <- 1.2
   
-  # We simualte a beta-binomial variable for those parameters.
+  # We simulate a beta-binomial random variable for those parameters.
   y <- rBB(k,n,p,phi)
   
-  # We perform the beta binomial regression, reaching very similar values
+  # We perform the beta-binomial regression
   BBreg(y~x,n)
 }

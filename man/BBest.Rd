@@ -6,7 +6,7 @@ Estimation of the beta-binomial distribution parameters
 }
 
 \description{
-This function performs the estimation of the beta-binomial distribution parameters, \eqn{p} and \eqn{\phi}, by the method of moments. The variance of the estimations is performed using maximum likelihood by the analytically determined beta-binomial density function.
+This function performs the estimation of the beta-binomial distribution parameters, \eqn{p} and \eqn{\phi}, by the method of moments. The variance of the estimations is performed using maximum likelihood by the analytically determined by a beta-binomial density function.
 }
 
 \usage{
@@ -35,7 +35,7 @@ The method of moments assumes that the response variable \eqn{y} follows a beta-
 
 The dispersion parameter, \eqn{\phi}, of the beta-binomial distribution can only be positive, as the beta-binomial distribution models the overdispersion. So if the estimated \eqn{\phi} parameter by the method of moments is negative, meaning that there exists underdispersion, the beta-binomial model will not be useful and the function will print an error message, suggesting the use of the binomial distribution.
 
-The variance of the estimations is calculated by maximum likelihood by the second derivative of the density function of the beta-binomial distribution, using the Fisher score matrix, and remplacing the estmiated values of the parameters in it.
+The variance of the estimations is calculated by maximum likelihood by the second derivative of the density function of the beta-binomial distribution, using the Fisher score matrix, and replace it by the estimated values.
 }
 
 \author{
