@@ -21,7 +21,7 @@ BIest(y,n,disp=FALSE)
 \item{se}{ the standard errors of the mle.}
 \item{low.ic}{ the lower bound of the confidence interval of the mle.}
 \item{up.ic}{ the upper bound of the confidence interval of the mle.}
-\item{phi}{ if the 'disp' option is TRUE, it returns the estimated value of the dispersion parameter. This estimation is done by method of moments, and affects estimation of the standard error of the mle.}
+\item{phi}{ if the \code{disp} option is TRUE, it returns the estimated value of the dispersion parameter. This estimation is done by method of moments, and affects estimation of the standard error of the mle.}
 }
 
 \details{

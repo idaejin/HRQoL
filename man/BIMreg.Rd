@@ -19,11 +19,11 @@ BIMreg(formula,n,random,data)
 The model that is performed by this function is a especial case of generalized linear mixed models (GLMMs), in which conditioned on some random components the response variable has a binomial distribution. As in the binomial (logistic) regression a logit link function is applied to the probability parameter of the conditioned distribution, allowing the inclusion of random components in the linear predictor,
 
 \deqn{logit(p)=X\beta+Zu,}
-where \eqn{p} is the probability parameter, \eqn{X} a full rank matrix composed by the covariables, \eqn{\beta} the regression coefficients, \eqn{Z} the design matrix for the random effects ang \eqn{u} are the random components. These random effects are independent and has a normal distribution with the same variance and mean 0.
+where \eqn{p} is the probability parameter, \eqn{X} a full rank matrix composed by the covariables, \eqn{\beta} the regression coefficients, \eqn{Z} the design matrix for the random effects and \eqn{u} are the random effects. These random effects are independent and has a normal distribution with the same variance and mean 0.
 
 The model estimates the fixed effects and the variance of the random effects, and predicts those random effects for each observation.
 
-The estimation of the parameters is done by likelihood approximation, via iteartive weighted least squares method. The estimation is performed in two steps:  (i) fixed and random parameters are calculated for some given random component variances (ii) variances of the random effects are calculated for some given regression and random coefficients. The estimation approach iterates between (i) and (ii) until convergence is obtained.
+The estimation of the parameters is done by likelihood approximation, via iterative weighted least squares (IWLS) method. The estimation is performed in two steps:  (i) fixed and random parameters are calculated for some given random component variances (ii) variances of the random effects are calculated for some given regression and random coefficients. The estimation approach iterates between (i) and (ii) until convergence is obtained.
 }
 
 \value{
@@ -33,12 +33,12 @@ The estimation of the parameters is done by likelihood approximation, via iteart
 
   \item{coefficients}{ the estimated value of the fixed coefficients in the regression.}
   \item{coef.vcov}{ the variance and covariance matrix of the estimated fixed coefficients in the regression.}
-  \item{random.coef}{ the predicted random effects of the regression. when more than one random effect is included the prediction of all the random coefficients is given, following the order defined in parameter \code{random}.}
+  \item{random.coef}{ the predicted random effects of the regression. When more than one random effects are included the prediction of all the random coefficients is given, following the order defined in parameter \code{random}.}
   \item{random.var}{ the variance of each random effect.}
   \item{deviance}{ the deviance of the model based on the approximated log-likelihood.}
   \item{fitted.values}{ the fitted mean values of the probability parameter of the conditioned binomial distribution, obtained by transforming the linear predictor by the inverse of the link function.}
   \item{residuals}{ the residuals of the model.}
-  \item{random.se}{ the standard error of each random effect, the esquare of the variance of the random effects.}
+  \item{random.se}{ the standard error of each random effect, the square of the variance of the random effects.}
   \item{working}{ the final working vector of the iterative weighted least square method.}
   \item{iter}{ the number of iterations in the estimation method.}
   \item{nObs}{ the number of observations in the data.}
@@ -55,17 +55,17 @@ The estimation of the parameters is done by likelihood approximation, via iteart
 }
 
 \author{
-Josu Najera
+Josu Najera Zuloaga
 
 Dae-Jin Lee
 }
 
 \references{
-Breslow N. E. & Calyton D. G. (1993): Approximate Inference in Generalized Linear Mixed Models, \emph{Journal of the American Statistical Association}, 88, 9-25
+Breslow N. E. & Clayton D. G. (1993): Approximate Inference in Generalized Linear Mixed Models, \emph{Journal of the American Statistical Association}, 88, 9-25.
 
-McCulloch C. E. & Searle S. R. (2001): Generalized, Linear, and Mixed Models, \emph{Jhon Wiley & Sons}
+McCulloch C. E. & Searle S. R. (2001): Generalized, Linear, and Mixed Models, \emph{John Wiley & Sons}.
 
-Pawitan Y. (2001): In All Likelihood: Statistical Modelling and Inference Using Likelihood, \emph{Oxford University Press}
+Pawitan Y. (2001): In All Likelihood: Statistical Modelling and Inference Using Likelihood, \emph{Oxford University Press.}
 
 }
 
@@ -73,7 +73,7 @@ Pawitan Y. (2001): In All Likelihood: Statistical Modelling and Inference Using 
 
 \examples{
 set.seed(5)
-# Creating the dependent variable with a simulated covariable:
+# Create a dependent variable with a random covariable:
 nObs <- 500
 x <- rnorm(nObs,4,1) 
 id1 <- c(kronecker(seq(1,5),rep(1,100)))
@@ -86,12 +86,12 @@ dat <- data.frame(cbind(y,x,id1,id2))
 dat$id1 <- as.factor(dat$id1)
 dat$id2 <- as.factor(dat$id2)
 
-#Estimating the mixed model for one random component.
+#Estimate the mixed model for one random component.
 mm1 <- BIMreg(y~x,10,c("id1"),dat)
 mm1
 summary(mm1)
 
-#Estimating the mixed model for two random components.
+#Estimate the mixed model for two random components.
 mm2 <- BIMreg(y~x,10,c("id1","id2"),dat)
 mm2
 summary(mm2)
