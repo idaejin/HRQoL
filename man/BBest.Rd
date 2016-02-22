@@ -2,7 +2,7 @@
 \alias{BBest}
 \alias{BBest}
 \title{
-Estimation of the Parameters of Beta-Binomial Distributions
+Estimation of the beta-binomial distribution parameters
 }
 
 \description{
@@ -14,7 +14,7 @@ BBest(y,n)
 }
 
 \arguments{
-\item{y}{ the outcome variable that is supposed to follow a beta-binomial distribution.}
+\item{y}{ the outcome variable that is supposed to be distributed as a beta-binomial distribution.}
 \item{n}{ the maximum score of the beta-binomial trials.}
 }
 
@@ -33,7 +33,7 @@ The method of moments assumes that the response variable \eqn{y} follows a beta-
 \deqn{E[y]=np}
 \deqn{Var[y]=np(1-p)[1+(n-1)\phi/(1+\phi)]}
 
-The dispersion parameter, \eqn{\phi}, of the beta-binomial distribution can only be positive, as the beta-binomial distribution models the overdispersion. So if the estimated \eqn{\phi} parameter by the method of moments is negative, meaning that there exists underdispersion, the beta-binomial model will not be useful and the function will print an error message, sugesting the use of the binomial distribution.
+The dispersion parameter, \eqn{\phi}, of the beta-binomial distribution can only be positive, as the beta-binomial distribution models the overdispersion. So if the estimated \eqn{\phi} parameter by the method of moments is negative, meaning that there exists underdispersion, the beta-binomial model will not be useful and the function will print an error message, suggesting the use of the binomial distribution.
 
 The variance of the estimations is calculated by maximum likelihood by the second derivative of the density function of the beta-binomial distribution, using the Fisher score matrix, and remplacing the estmiated values of the parameters in it.
 }

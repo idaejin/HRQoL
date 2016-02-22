@@ -2,7 +2,7 @@
 \alias{BBreg}
 \alias{BBreg}
 \title{
-  Fitting Beta-Binomial Regression Models
+  Fitting Beta-binomial regression models
 }
 \description{
   \code{BBreg} is used to fit beta-binomial regression models, where the estimation is performed using maximum likelihood.
