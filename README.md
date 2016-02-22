@@ -14,7 +14,6 @@ This `R` package implements the use of Beta-binomial regression (with logistic l
 ```
 install.packages("devtools")
 library(devtools)
-dev_mode(on=TRUE)
 install_github("idaejin/HRQoL")
 ```
 
