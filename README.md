@@ -11,6 +11,8 @@ In addition, it included some graphical options and re-codification of SF-36 sco
 
 ## Installation of  `HRQoL` using `devtools`
 
+`R` version >3.2.3 required
+
 ```
 install.packages("devtools")
 library(devtools)
