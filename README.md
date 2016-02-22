@@ -7,7 +7,7 @@ This `R` package implements the use of Beta-binomial regression (with logistic l
 In addition, it includes some graphical options and re-codification of SF-36 scores as in Arostegui *et al.* (2006).
 
 
-**Creator(s):** Josu Nájera (<jnajera@bcamath.org>) & Dae-Jin Lee (<dlee@bcamath.org>)
+**Author(s):** Josu Nájera (<jnajera@bcamath.org>) & Dae-Jin Lee (<dlee@bcamath.org>)
 
 
 ## Installation of  `HRQoL` using `devtools`
