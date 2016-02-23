@@ -20,6 +20,10 @@ library(devtools)
 install_github("idaejin/HRQoL")
 ```
 
+Please refer to this `R` package to the manuscript 
+
+*"A comparison of beta-binomial regression model approaches to analyze health related quality of life data in chronic obstructive pulmonary disease patients"* submitted. 
+
 
 
 ## References
