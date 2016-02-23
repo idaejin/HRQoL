@@ -5,7 +5,7 @@
   Fit a logistic regression model
 }
 \description{
-BIreg is used to fit a logistic regression model, i.e., it conects the probability parameter of a binomial distribution with some given covariables by a logit link function. There is the option to include a dispersion parameter which will be estimated by the bias-corrected method of moments.
+\code{BIreg} is used to fit a logistic regression model, i.e., the probability parameter of a binomial distribution with some given covariables is related by a logit link function. There is the option to include a dispersion parameter which will be estimated by the bias-corrected method of moments.
 }
 \usage{
   BIreg(formula,n,data,disp=FALSE)
@@ -14,7 +14,7 @@ BIreg is used to fit a logistic regression model, i.e., it conects the probabili
 \item{formula}{ an object of class \code{"formula"} (or one that can be coerced to that class): a symbolic description of the model to be fitted.}
   \item{n}{ the maximum score of the Binomial trials.}
   \item{data}{ an optional data frame, list or environment (or object coercible by \code{as.data.frame} to a data frame) containing the variables in the model. If not found in data, the variables are taken from environment(formula).}
-  \item{disp}{ if TRUE the dispersion parameter will be estimated. Default mode is set to FALSE.}
+  \item{disp}{ if \code{TRUE} the dispersion parameter will be estimated. Default mode is set to \code{FALSE}.}
 }
 \value{
   \code{BIreg} returns an object of class "\code{BIreg}".
