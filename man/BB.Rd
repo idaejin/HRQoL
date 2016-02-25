@@ -36,7 +36,7 @@ Consequently, \eqn{p} is called the probability parameter and \eqn{\phi} is call
 }
 
 \author{
-Josu Najera 
+Josu Najera-Zuloaga
 
 Dae-Jin Lee
 }
