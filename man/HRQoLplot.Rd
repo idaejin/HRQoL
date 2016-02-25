@@ -31,7 +31,7 @@ The \code{HRQoLplot} has a data frame object as input, and an optional \code{leg
 }
 
 \author{
-Josu Najera Zuloaga
+Josu Najera-Zuloaga
 
 Dae-Jin Lee
 
