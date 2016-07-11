@@ -22,9 +22,7 @@ install_github("idaejin/HRQoL")
 
 If you use this `R` package, please contact us or refer to the manuscript:
 
-*"A comparison of beta-binomial regression model approaches to analyze health related quality of life data in chronic obstructive pulmonary disease patients".* Najera-Zuloaga, J., Lee, D.-J., Arostegui, I. (submitted). 
-
-
+*"Comparison of beta-binomial regression model approaches to analyze health related quality of life data".* Najera-Zuloaga, J., Lee, D.-J., Arostegui, I. (submitted). 
 
 ## References
 * Arostegui I., Nuñez-Antón V. & Quintana J. M. (2006): *Analysis of short-form-36 (SF-36): The beta-binomial distribution approach*, Statistics in Medicine, 26, 1318-1342.
@@ -32,6 +30,7 @@ If you use this `R` package, please contact us or refer to the manuscript:
 * Arostegui I., Nuñez-Antón V. & Quintana J. M. (2013): *On the recoding of continuous and bounded indexes to a binomial form: an application to quality-of-life scores*, Journal of Applied Statistics, 40:3, 563-583
 * Breslow N. E. & Clayton D. G. (1993): *Approximate Inference in Generalized Linear Mixed Models*, Journal of the American Statistical Association, 88, 9-25.
 * Forcina A. & Franconi L. (1988): *Regression analysis with Beta-Binomial distribution*, Revista di Statistica Applicata, 21. 
+* Lee Y. & Nelder J. A. (1996): *Hierarchical generalized linear models*, Journal of the Royal Statistical Society Series B, 58, 619-678.
 * McCulloch C. E. & Searle S. R. (2001): *Generalized, Linear, and Mixed Models*, John Wiley & Sons.
 * Pawitan Y. (2001): *In All Likelihood: Statistical Modelling and Inference Using Likelihood*, Oxford University Press.
 
